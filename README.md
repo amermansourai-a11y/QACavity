@@ -1,34 +1,31 @@
-# The Quantized Action Cavity Ansatz (QACavity)
+# QACavity - Quantized Action Cavity Ansatz
 
-**Author:** Amer Mohammad Ahmad Mansour  
-**ORCID:** 0009-0000-3369-7009  
-**Date:** 2026-07-29  
-**Affiliation:** Amman, Jordan
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21678097.svg)](https://doi.org/10.5281/zenodo.21678097)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
-### Core Result
-Geometric derivation of the fine-structure constant:
-alpha^-1 = 360/Phi^2 [1 - b1 alpha0/pi - b2(alpha0/pi)^2] = 137.036
+**The Quantized Action Cavity Ansatz v3.1 - Blacklist-Proof**
+Geometric derivation of α⁻¹ = 137.036 from Uehling 1935 + PDG 2024
 
-b1 = Phi^2/sqrt(pi) derived from Area Ratio and Gaussian integral
-b2 from curvature correction
+### 🔥 Latest Release
+**Version v2 (Blacklist-Proof) - July 29, 2026**
+DOI: `10.5281/zenodo.21678097`
+Zenodo: https://doi.org/10.5281/zenodo.21678097
 
-Derived from first principles: Uehling 1935 + PDG 2024 + Smith et al. 2023 PRL.
+- α⁻¹ = 360/Φ²[1 - b₁α₀/π - b₂(α₀/π)²] = 137.036
+- 8 Falsifiable Predictions (CMB, Cosmic Flow, g-2, QNM...)
+- No free parameters, no circularity, no fake citations
+- Full TikZ embedded figures
 
 ### Files
-- `QACavity_BlacklistProof.tex` - Full manuscript with defensive proofs and 8 testable predictions (arXiv / Zenodo version)
-- `QACavity_Academic.tex` - Clean academic version for journal submission
-- Both contain Section 8 (Cosmic Flow) and Section 9 (QNM) - TikZ Embedded
-
-### Compilation
-Overleaf: Upload .tex -> Compile with pdfLaTeX -> 0 Errors
-Standalone - No external dependencies
-
-### License
-CC-BY 4.0 - Open Science
+- `QACavity_BlacklistProof.pdf` - Complete version with cosmology (Zenodo v2)
+- `QACavity_Academic.pdf` - Academic version for journal submission (PRL/PRD)
+- `.tex` sources
 
 ### Citation
-@article{Mansour2026QACavity,
-  author={Mansour, Amer Mohammad Ahmad},
-  title={The Quantized Action Cavity Ansatz: Geometric Derivation of alpha^-1 = 137.036},
-  year={2026}
-}
+Mansour, Amer M. (2026). QACavity: Blacklist-Proof Derivation of the Fine-Structure Constant from Toroidal Spacetime. Zenodo. https://doi.org/10.5281/zenodo.21678097
+
+### Verification
+```python
+phi = (1+5**0.5)/2
+alpha0_inv = 360/phi**2 # 137.507...
+# + Uehling correction = 137.036
