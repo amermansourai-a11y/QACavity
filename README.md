@@ -3,7 +3,7 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21678097.svg)](https://doi.org/10.5281/zenodo.21678097)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
-**The Quantized Action Cavity Ansatz v3.1 - Blacklist-Proof**
+**The Quantized Action Cavity Ansatz_ BlacklistProof**
 Geometric derivation of α⁻¹ = 137.036 from Uehling 1935 + PDG 2024
 
 ### 🔥 Latest Release
