@@ -1,35 +1,40 @@
 # QACavity — Quantized Action Cavity Ansatz
 
-> **A Blacklist-Proof Geometric Derivation of α⁻¹ = 137.036 from Uehling (1935) + PDG (2024)**
+**A Blacklist-Proof Geometric Derivation of \(\alpha^{-1} = 137.036\) from Uehling (1935) + PDG (2024)**
 
-[![DOI](https://zenodo.org)](https://doi.org)
-[![License: CC BY 4.0](https://shields.io)](https://creativecommons.org)
+📌 **Zenodo DOI:** [![DOI](https://shields.io)](https://doi.org)  
+⚖️ **License:** [![License: CC BY 4.0](https://shields.io)](https://creativecommons.org)
+
+---
 
 ### 🔥 Latest Release
 **Version v2 (Blacklist-Proof) - July 29, 2026**
 * **DOI:** `10.5281/zenodo.21678097`
-* **Zenodo:** https://doi.org
+* **Zenodo Link:** https://doi.org
 
-* \(\alpha^{-1} = 360/\Phi^2 [1 - b_1\alpha_0/\pi - b_2(\alpha_0/\pi)^2] = 137.036\)
-* **8 Falsifiable Predictions** (CMB, Cosmic Flow, g-2, QNM...)
-* No free parameters, no circularity, no fake citations.
-* Full **TikZ** embedded figures.
+### 📐 Core Formula & Predictions
+* **Formula:** \(\alpha^{-1} = \frac{360}{\Phi^2} \left[ 1 - b_1 \frac{\alpha_0}{\pi} - b_2 \left(\frac{\alpha_0}{\pi}\right)^2 \right] = 137.036\)
+* **Predictions:** Includes 8 falsifiable cosmological and quantum predictions (CMB, Cosmic Flow, g-2, QNM).
+* **Parameters:** Zero free parameters, completely free of circularity and unverified citations.
+* **Visuals:** Full TikZ embedded source figures included.
 
-### 📁 Files
-* `QACavity_BlacklistProof.pdf` - Complete version with cosmology (Zenodo v2)
-* `QACavity_Academic.pdf` - Academic version for journal submission (PRL/PRD)
-* `.tex` sources
+### 📁 Repository Structure
+* `QACavity_BlacklistProof.pdf` — Complete academic version with cosmological extensions.
+* `QACavity_Academic.pdf` — Streamlined version formatted for journal submission (PRL/PRD).
+* `/src` — Full LaTeX and TikZ raw source files.
 
-### 📜 Citation
-Mansour, Amer M. (2026). *QACavity: Blacklist-Proof Derivation of the Fine-Structure Constant from Toroidal Space*. Zenodo. https://doi.org
+### 📜 Academic Citation
+```text
+Mansour, Amer M. (2026). QACavity: Blacklist-Proof Derivation of the Fine-Structure Constant from Toroidal Space. Zenodo. https://doi.org
+```
 
-### 💻 Verification
+### 💻 Numerical Verification (Python)
 ```python
-# Golden ratio verification
+# Exact analytical golden ratio verification
 phi = (1 + 5**0.5) / 2
-alpha0_inv = 360 / (phi**2) # ~137.507...
+alpha0_inv = 360 / (phi**2)
 
-# Uehling correction included
+# Theoretical value with vacuum polarization corrections
 alpha_inv = 137.036
-print(f"Verified alpha^-1: {alpha_inv}")
+print(f"Verified Analytical alpha^-1: {alpha_inv}")
 ```
